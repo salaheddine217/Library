@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Library App</title>
+</head>
+<body>
+    <div class="newbook">
+        <dialog id="bookdialog">
+            <form name="bookform">
+                <label for="bname">Book Name:</label>
+                <input type="text" name="bname" required>
+
+                <label for="bauthor">Author:</label>
+                <input type="text" name="bauthor" required>
+
+                <label for="bpages">Number of pages:</label>
+                <input type="number" name="bpages" required>
+
+                <label>
+                    Read:
+                    <select name="read">
+                      <option>Read</option>
+                      <option>Not read</option>
+                    </select>
+                  </label>
+
+            </form>
+
+            <div class="choice">
+                <button id="cancel">Cancel</button>
+                <button id="confirmBtn">Add</button>
+            </div>
+            
+
+            
+
+          </dialog>
+        <button id="showdialog">NEW BOOK</button>
+
+        <output></output>
+    </div>
+    <div class="books"></div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
